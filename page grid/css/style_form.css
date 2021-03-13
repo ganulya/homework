@@ -1,0 +1,123 @@
+/*
+* {
+    background-color: black;
+}
+*/
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 50px auto;
+    width: 300px;
+    border: 1px solid;
+    border-radius: 15px;
+    border-color: #b399ff;
+    background-color: black;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #b399ff;
+    margin: 20px;
+}
+
+.ffs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ffs, .gender, .license {
+    margin-top: 20px;
+}
+
+
+.form {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    display: block;
+    margin: 15px 0px;
+    background-color: black;
+    border: 1px solid;
+    border-radius: 15px;
+    border-color: #b399ff;
+    outline: inherit;
+    padding-left: 10px;
+    color: #b399ff;
+}
+
+label {
+    color: #b399ff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#repeat_password {
+    margin-top: 0px;
+}
+
+.gender {
+    display: flex;
+    justify-content: space-around;
+}
+
+#male, #female, #other, #license {
+    margin: 0px;
+    width: 35px;
+    position: relative;
+    top: 3px;
+}
+
+.license {
+    display: flex;
+    justify-content: center;
+}
+
+form:invalid button[type='submit']{
+    pointer-events: none;
+    border: 1px solid #fc5656;
+}
+
+input:invalid {
+    border: 1px solid #fc5656;
+}
+
+input:valid {
+    border: 1px solid #acfc56;
+}
+
+
+button {
+    margin: 10px;
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    border: 2px solid;
+    color: #b399ff;
+    background-color: black;
+    border-color: #b399ff;
+    border-radius: 20px;
+    outline: inherit;
+}
+    
+button:hover{
+    -webkit-box-shadow: 0px 0px 14px 1px rgba(204,102,255,0.61); 
+    box-shadow: 0px 0px 14px 1px rgba(204,102,255,0.61);
+}
+
+button:active{
+    background-color: #b399ff;
+    color: black;
+}
+
+
