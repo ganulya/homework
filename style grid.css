@@ -20,13 +20,15 @@
 }
 
 .hide {
-    display: none;
+    position: absolute;
 }
 
+/*
 .details:hover + .hide {
   display: block;
   color: black;
 }
+*/
 
 .child:first-child {
     background-color: blue;
