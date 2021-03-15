@@ -44,19 +44,28 @@
 }
 
 .child {
-    overflow: hidden;
+    background-position: center;
 }
 
+.child p {
+    display: none;
+    font-family: 'Roboto-bold', sans-serif;
+    padding: 10px;
+}
+
+.child:hover p {
+    display: block;
+    background-color: blue;
+}
 
 .child:nth-child(1) {
     grid-column: 1/3;
     grid-row: 1/3;
 }
 
-.child img {
-    position: relative;
-    top: -10px;
-    left: -10px;
+.child:nth-child(8) {
+    grid-column: 3/5;
+    grid-row: 5/8;
 }
 
 .footer {
@@ -85,10 +94,8 @@ a:active {
 .art::-webkit-scrollbar {
     width: 15px;
     background-color: black;
-    border-radius: 10px;
 }
 
 .art::-webkit-scrollbar-thumb {
     background-color: blue;
-    border-radius: 10px;
 }
