@@ -49,18 +49,20 @@
 .child {
     background-position: center;
     position: relative;
+    overflow: hidden;
 }
 
 .child p {
-    display: none;
+    display: block;
+    transform: translateY(-100%);
+    background-color: blue;
     font-family: 'Roboto-bold', sans-serif;
     padding: 10px;  
 }
 
 .child:hover p {
-    display: block;
-    background-color: blue;
-    transition-duration: 1s;
+    transform: translateY(0);
+    transition-duration: 0.5s;
 }
 
 
