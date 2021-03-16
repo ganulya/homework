@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    background-color: black;
 }
 
 .wrapper {
@@ -11,6 +12,7 @@
 .header {
     display: flex;
     height: 10%;
+    max-height: 230px;
     background-color: blue;
     font-family: 'Julius Sans One', sans-serif;
     font-size: 70px;
@@ -26,6 +28,7 @@
 
 .about {
     width: 20%;
+    overflow: hidden;
     padding: 30px;
     background-color: black;
     color: white;
@@ -45,18 +48,21 @@
 
 .child {
     background-position: center;
+    position: relative;
 }
 
 .child p {
     display: none;
     font-family: 'Roboto-bold', sans-serif;
-    padding: 10px;
+    padding: 10px;  
 }
 
 .child:hover p {
     display: block;
     background-color: blue;
+    transition-duration: 1s;
 }
+
 
 .child:nth-child(1) {
     grid-column: 1/3;
