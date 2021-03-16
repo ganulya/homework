@@ -1,6 +1,5 @@
 * {
     margin: 0;
-    background-color: black;
 }
 
 .wrapper {
@@ -52,15 +51,21 @@
     overflow: hidden;
 }
 
-.child p {
-    display: block;
+.drop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     transform: translateY(-100%);
     background-color: blue;
     font-family: 'Roboto-bold', sans-serif;
-    padding: 10px;  
+    padding: 10px; 
 }
 
-.child:hover p {
+.drop img {
+    width: 20px;
+}
+
+.child:hover .drop{
     transform: translateY(0);
     transition-duration: 0.5s;
 }
@@ -106,4 +111,19 @@ a:active {
 
 .art::-webkit-scrollbar-thumb {
     background-color: blue;
+}
+
+#full1, #full2, #full3, #full4, #full5, #full6, #full7, #full8, #full9, #full10, #full11, #full12 {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#full1:target {
+    display: block;
+    background-color:  rgba(100, 100, 100, 0.5);
+    backdrop-filter: blur(5px);
 }
