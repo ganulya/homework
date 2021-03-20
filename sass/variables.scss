@@ -2,3 +2,8 @@ $secondcolor: blue;
 $maincolor: black;
 $textcolor: white;
 $mainfont: 'Roboto', sans-serif; 
+
+%incommon {
+    background-color: $maincolor; 
+    font-family: $mainfont;
+}

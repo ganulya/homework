@@ -20,13 +20,13 @@
     
     .header {
         display: flex;
+        align-items: center;
+        justify-content: center;
         height: 10%;
         max-height: 230px;
         background-color: $secondcolor;
         font-family: 'Julius Sans One', sans-serif;
         font-size: 70px;
-        align-items: center;
-        justify-content: center;
     }
     
     .content {
@@ -38,9 +38,8 @@
             width: 20%;
             overflow: hidden;
             padding: 30px;
-            background-color: $maincolor;
             color: $textcolor;
-            font-family: $mainfont;
+            @extend %incommon;
         } 
         
         .art {
@@ -117,11 +116,10 @@
     .footer {
         display: flex;
         flex-direction: row;
-        background-color: $maincolor;
         height: 10%;
         color: $secondcolor;
-        font-family: $mainfont;
         align-items: center;
+        @extend %incommon;
         
         p {
             padding-left: 25px;
