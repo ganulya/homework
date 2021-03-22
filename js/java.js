@@ -1,6 +1,6 @@
 //1
 
-let min = 23
+let min = 23;
 
 if (min < 15) {
     console.log('first quarter')
@@ -14,7 +14,7 @@ if (min < 15) {
 
 //2.1
 
-let num = 1
+let num = 1;
 
 if (num === 1){
     console.log('winter')
@@ -28,7 +28,7 @@ if (num === 1){
    
 //2.2
     
-let num = 4
+let num = 4;
 
 switch (num) {
     case 1:
@@ -42,6 +42,9 @@ switch (num) {
         break;
     case 4:
         console.log('autumn');
+        break;
+    default: 		
+        сonsole.log('seasons');
         break;
 }
 
