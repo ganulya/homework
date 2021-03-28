@@ -11,8 +11,8 @@ function equal() {
     result.innerHTML = solved;
 }
 
-function clear() {
-    result.innerHTML = '0';
+function clean() {
+    result.innerHTML = ' ';
 }
 
 
