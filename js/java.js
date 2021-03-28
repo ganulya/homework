@@ -1,7 +1,7 @@
-const result = document.getElementById('result').value;
-const num = document.getElementById('num').value;
-const eq = document.getElementById('equal').value;
-const op = document.getElementById('operator').value;
+const result = document.getElementById('result');
+const num = document.getElementById('num');
+const eq = document.getElementById('equal');
+const op = document.getElementById('operator');
 
 function display() {
     result.innerHTML = num.value;
