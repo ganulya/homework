@@ -34,15 +34,19 @@
             grid-row: 4/6;
         }
         
-        input {
-            color: blue;
+        &:nth-child(18) {
+            grid-column: 2/5;
+            grid-row: 6/7;
+        }
+        
+        p {
             text-align: right;
-            @extend %incommontext;
-            @extend %incommon;
+            overflow: hidden;
         }
         
         button {
             color: blue;
+            cursor: pointer;
             @extend %incommontext;
             @extend %incommon;
             

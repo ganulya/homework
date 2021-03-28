@@ -1,9 +1,18 @@
-const result = document.getElementById('result');
-const num = document.getElementById('num');
-const eq = document.getElementById('equal');
-const op = document.getElementById('operator');
+let result = document.getElementById('result');
 
-function display() {
-    result.innerHTML = num.value;
+
+function display(value) {
+    result.innerHTML += value;   
 }
+
+function equal() {
+    let equation = result.innerHTML;
+    let solved = eval(equation);
+    result.innerHTML = solved;
+}
+
+function clear() {
+    result.innerHTML = '0';
+}
+
 
