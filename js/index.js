@@ -1,33 +1,40 @@
-//№1
-let arr1 = [];
-let arr2 = [];
+//дополнительно
 
-for (let i = 0; i < 10; i++) {
-    arr1[i] = Math.round(Math.random()*10);
-    arr2[i] = Math.round(Math.random()*10);
-}
-console.log(arr1);
-console.log(arr2);
+////#1
+//const arr1 = [1, 2, 3, 4, 5];
+//arr1.splice(1, 2);
+//console.log(arr1);
+//
+////#2
+//const arr2 = [1, 2, 3, 4, 5];
+//arr2.reverse();
+//console.log(arr2);
+//
+////#3
+//const arr3 = [11, 22, 33, 44, 55];
+//const newArr3 = [];
+//
+//for (let i = arr3.length - 1; i >= 0; i--) {
+//    newArr3.push(arr3[i]);
+//}
+//
+//console.log(arr3);
+//console.log(newArr3);
 
-const arr3 = arr1.concat(arr2);
+//#4
+const arr4One = [6, 7, 8, 9, 10];
+const arr4Two = [6, 7, 8, 9, 10];
 
+const arr4Three = [6, 4, 8, 2, 1];
+const arr4Four = [4, 7, 5, 9, 0];
 
-arr3.push(111, 222, 333);
-
-
-let max = 0;
-let min = 1; 
-//я думала надо чтобы min = 0 тоже, но тогда ничего не получается, я попробовала единицу методом тыка и оно как бы работет, но я не очень понимаю почему
-
-for (let i = 1; i < arr3.length; i++) {
-    if (arr3[i] > max) {
-        max = arr3[i];
-    } else if (arr3[i] < min){
-        min = arr3[i];
+function compareArrs(arr4One, arr4Two) {
+    
+    for (let i = 0; i < array.lenght; i++) {
+        if (arr4One[i] == arr4Two[i]) {
+            true();    
+        }
     }
 }
 
-let arr4 = [max, min];
-
-console.log(arr3);
-console.log(arr4);
+compareArrs(arr4One, arr4Two);
