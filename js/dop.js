@@ -1,10 +1,6 @@
 //дополнительно
 // #1
-let a = 44;
-let b = 44;
-
-
-function eq() {
+function eq(a, b) {
 //		return a == b;
     	if (a == b) {
 		return true;
@@ -13,13 +9,10 @@ function eq() {
 	}
 }
 
-console.log(eq());
+console.log(eq(46, 44));
 
 //#2
-let d = 2;
-let e = 2;
-
-function sum() {
+function sum(d, e) {
     	if (d + e > 10) {
 		return true;
 	} else {
@@ -27,12 +20,10 @@ function sum() {
 	}
 }
 
-console.log(sum());
+console.log(sum(2, 2));
 
 //#3
-let n = -54;
-
-function nORp() {
+function nORp(n) {
     if (n <= 0) {
         return true;
     } else {
@@ -40,7 +31,7 @@ function nORp() {
     }
 }
 
-console.log(nORp());
+console.log(nORp(-14));
 
 //#4
 const fruit = ['orange', 'banana', 'pear'];
@@ -60,24 +51,23 @@ console.log(fruit);
 console.log(fruit.length);
 
 //#5
-let k = 23;
 
-function stonk() {
+function stonk(k) {
     let stonks = k * k;
     return stonks;
 }
 
-console.log(stonk());
+console.log(stonk(23));
 
 //#6
-let y = 6;
 
-function add() {
+
+function add(y) {
     let plus = y + y;
     return plus;
 }
 
-console.log(add());
+console.log(add(9));
 
 //#7
 function week(day) {
