@@ -1,70 +1,125 @@
-//#1
-const arr1 = [1, 2, 3, 4, 5];
-arr1.splice(1, 2);
-console.log(arr1);
+//массив не с объектами, а с массивами(массив массивов)
+const users = [
+    {
+        name: 'leha',
+        age: 16,   
+    },
+    {
+        name: 'rob',
+        age: 19,   
+    },
+    {
+        name: 'kate',
+        age: 20,   
+    }
+    
+]
 
-//#2
-const arr2 = [1, 2, 3, 4, 5];
-arr2.reverse();
-console.log(arr2);
+const newArr = [];
+newArr.push(Object.keys(users));
+newArr.push(Object.values(users));
+console.log(newArr);
 
-//#3
-const arr3 = [11, 22, 33, 44, 55];
-const newArr3 = [];
+//#1 no
+let input = document.getElementById('inpV');
+let changeNum = document.getElementById('change');
 
-for (let i = arr3.length - 1; i >= 0; i--) {
-    newArr3.push(arr3[i]);
+function colonOdd(num) {
+    
 }
 
-console.log(arr3);
-console.log(newArr3);
+//#2 & #3
+let arr = ['dwtw', 23, 5, 11, 13, 33, 'sbtwotl', 93];
 
-//#4 есть вопрос
-const arr6 = [6, 17, 8, 7, 10];
-const arr7 = [33, 1, 78, 1, 0];
-
-function compareeArrs() {
-    
-    for(i = 0; i < arr6.length; i++)
-        if (arr6[i] == arr7[i]) {
-                return true;    
-            } else {
-                return false;  
-            }
+function getFirst(array, n) {
+    let arrFirst = array.splice(0, n);
+    console.log(arrFirst);
 }
 
-console.log(compareeArrs());
+getFirst(arr, 1);
 
-//#5 не понимаю как сделать чтобы было кратно и 3 и 5 одновременно
-let arr8 = [];
-
-for (let i = 0; i <= 99; i++) {
-    
-    arr8[i] = i + 1;
-    
-    if (arr8[i] % 3 == 0) {
-        arr8[i] = 'fizz';
-    } else if (arr8[i] % 5 == 0) {
-        arr8[i] = 'buzz';
-    } 
+function getLast(array, n) {
+    let arrLast = array.splice(-n);
+    console.log(arrLast);
 }
-console.log(arr8);
+
+getLast(arr, 1);
 
 
+//#5 
+let aarr = [4, 4];
+let sum = 0;
 
+function sumOfSquares(arr) {
+    for (let j = 0; j < aarr.length; j++) {
+        sum += Math.pow(aarr[j], 2);
+    }
+    console.log(sum);
+}
+sumOfSquares(arr);
 
+//#6  
+const ppl0 = [
+    {
+        name: 'Leha',
+        age: 27
+    },
+    {
+        name: 'Max',
+        age: 25
+    },
+    {
+        name: 'Elvis',
+        age: 31
+    },
+    {
+        name: 'Roll',
+        age: 30
+    },
+]
+console.table(ppl0);
 
+let userAge = [];
 
+for (let r = 0; r < ppl0.length; r++) {
+    
+    if (ppl0[r].age < 30) {
+        userAge.push(ppl0[r]);
+    }
+}
 
+console.log(userAge);
 
+//#7 
 
+const ppl = [
+    {
+        name: 'Leha',
+        age: 27
+    },
+    {
+        name: 'Max',
+        age: 25
+    },
+    {
+        name: 'Elvis',
+        age: 31
+    },
+    {
+        name: 'Roll',
+        age: 30
+    },
+]
 
+console.table(ppl);
 
+function propertyValue(array, key) {
+    let valueArr = [];
+    
+    for (let k = 0; k < array.length; k++) {
+        valueArr.push(array[k][key])
+    }
+    console.log(valueArr);
+}
 
-
-
-
-
-
-
-
+propertyValue(ppl, 'age');
