@@ -1,56 +1,32 @@
-////#1 создать класс и метод getSalary
-//class Worker {
-//    constructor(name, surname, rate, days) {
-//        this.name = name;
-//        this.surname = surname;
-//        this.rate = rate;
-//        this.days = days;
-//    }
-//    getSalary() {
-//        return this.rate * this.days;
-//    }
-//}
-//
-//const worker1 = new Worker('michail', 'bulgakov', 23, 31);
-//console.log(worker1);
-//console.log(worker1.getSalary());
+const input = document.getElementById('input');
+const btn = document.getElementById('btn');
+const result = document.getElementById('result');
 
-////#2 сделать все свойства приватными, а для их чтения сделать методы-геттеры
-//class Work {
-//    
-//    #rate = 40;
-//    
-//    get rate() {
-//        return this.#rate;
-//    }
-//    
-//    constructor (days) {
-//        this.days = days;
-//    }
-//    
-//    getSalary() {
-//        return this.#rate * this.days;
-//    }
-//}
-//
-//class Worker extends Work {
-//    constructor (name, surname, days) {
-//        super(days);
-//        this.name = name;
-//        this surname = surname;
-//    }
-//}
-//
-//const worker1 = new Worker ('Mikhail', 'H', 22);
-//worker1.getSalary();
-//console.log(worker1.getSalary());
+btn.addEventListener('click', myFunc);
 
+function myFunc() {
+    if (input.value === '') return;
+    addremove(input.value);
+    input.value = '';
+}
 
-
-
-
-
-
+function addremove(value) {
+    const li = document.createElement(`li`);
+    li.className = 'li';
+    li.textContent = value;
+    
+    const btn = document.createElement('button');
+    btn.className = 'btn';
+    btn.textContent = 'done';
+    li.appendChild(btn);
+    
+    btn.addEventListener('click', remove);
+    function remove() {
+        result.removeChild(li);
+    }
+    
+    result.appendChild(li);
+}
 
 
 

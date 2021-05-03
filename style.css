@@ -1,0 +1,42 @@
+* {
+    background: black;
+    margin: 0px;
+}
+
+.wrapper {
+    margin: 100px auto;
+    padding: 20px;
+    height: 500px;
+    width: 300px;
+    border: 1px solid blue;
+    border-radius: 10px;
+}
+
+input {
+    outline: inherit;
+    border: 1px solid blue;
+    border-radius: 5px;
+    color: blue;
+}
+
+#btn {
+    outline: inherit;
+    border: 1px solid blue;
+    border-radius: 5px;
+    color: blue;
+}
+
+.btn {
+    outline: inherit;
+    border: 1px solid blue;
+    border-radius: 5px;
+    color: blue;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.li {
+    color: blue;
+    font-family: sans-serif;
+    padding: 10px;
+}
