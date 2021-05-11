@@ -1,0 +1,8 @@
+@import './colors.scss';
+
+p {
+    font-size: 40px;
+    color: $bluecolor;
+    border: 2px solid black;
+    background-color: red;
+}
