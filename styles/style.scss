@@ -18,7 +18,7 @@ body {
     }
 
     .main_wrapper {
-        background: url(../img/bg.jpg) no-repeat center center fixed;
+        background: url(../src/assets/bg.jpg) no-repeat center center fixed;
         background-size: cover;
         height: 100%;
         overflow: hidden;
@@ -37,28 +37,13 @@ body {
                 align-self: center;
                 margin-left: 20px;
             }
-
-            .contact {
-                display: flex;
-                flex-direction: column;
-                align-self: center;
-                margin-left: 40px;
-                @extend %pcommon;
-
-                .p1 {
-                    font-size: 20px;
-                }
-
-                .p2 {
-                    font-size: 40px;
-                }
-            }
         }
 
         .aboutPage {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            height: 70%;
 
             .logo {
                 align-self: center;
@@ -85,7 +70,7 @@ body {
                     font-family: $boldfont;
                     font-size: 37.5px;
                     color: white;
-                    background: url(../img/arrow.png) 50% no-repeat;
+                    background: url(../src/assets/arrow.png) 50% no-repeat;
                     background-size: contain;
                 }
 
@@ -147,7 +132,6 @@ body {
                                 display: grid;
                                 grid-template-columns: repeat(4, 1fr);
                                 width: 320px;
-                                padding: 10px;
                                 margin-top: 10px;
                                 @extend %border;
 
@@ -167,7 +151,7 @@ body {
     .orderProcess {
         margin-top: 50px;
         padding: 10px 0 100px 0;
-        background: url(../img/wave.svg) no-repeat center top fixed;
+        background: url(../src/assets/wave.svg) no-repeat center top fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
