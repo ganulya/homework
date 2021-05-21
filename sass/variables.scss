@@ -1,0 +1,81 @@
+$boldfont: 'Montserrat', sans-serif;
+$regularfont: 'Nunito', sans-serif;
+$dropshadow: #c3c7e2;
+$clrdarkblue: #1a1f58;
+$clrlight: #ffcc99;
+$clrorange: #f97241;
+
+%buttons {
+    margin: 10px;
+    font-size: 20px;
+    font-family: $regularfont;
+    color: $clrdarkblue;
+    border: none;
+    border-radius: 50px;
+    outline: inherit;
+    background-color: $clrlight;
+    height: 50px;
+    width: 150px;
+    line-height: 20px;
+    cursor: pointer;
+    -webkit-box-shadow: 6px 6px 23px -13px rgba(0,0,0,0.77); 
+    box-shadow: 6px 6px 23px -13px rgba(0,0,0,0.77);
+
+    &:active {
+        box-shadow: inset 0px 0px 10px rgba(26,31,88,1);
+        color: $clrdarkblue;
+    }
+}
+
+%pcommon {
+    font-family: $regularfont;
+    color: $clrdarkblue;
+    font-size: 20px;
+}
+
+%hcommon {
+    font-family: $boldfont;
+    color: $clrdarkblue;
+    font-size: 20px;
+}
+
+%hBigcommon {
+    font-family: $boldfont;
+    color: $clrdarkblue;
+    font-size: 50px;
+}
+
+%pcontacts {
+    font-family: $regularfont;
+    color: $dropshadow;
+    font-size: 40px;
+}
+
+%sectionName {
+    text-align: center;
+    margin: 60px 0px 60px 0px;
+    @extend %hBigcommon;
+}
+
+%border {
+    border: inherit;
+    border-radius: 10px;
+}
+
+%shadowbox {
+    -webkit-box-shadow: 5px 5px 15px -6px #000000;
+    box-shadow: 5px 5px 15px -6px #000000;
+}
+
+%stepNum {
+    font-family: $boldfont;
+    color: $clrorange;
+    font-size: 50px;
+    text-shadow: 0.5px 0.5px $clrdarkblue, 1px 1px $clrdarkblue, 1.5px 1.5px $clrdarkblue, 2px 2px $clrdarkblue, 2.5px 2.5px $clrdarkblue, 3px 3px $clrdarkblue, 3.5px 3.5px $clrdarkblue, 4px 4px $clrdarkblue;
+}
+
+%stepName {
+    font-family: $boldfont;
+    color: $clrdarkblue;
+    font-size: 100%;
+}

@@ -1,0 +1,346 @@
+.wrapper .btn {
+  margin: 10px;
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  color: #1a1f58;
+  border: none;
+  border-radius: 50px;
+  outline: inherit;
+  background-color: #ffcc99;
+  height: 50px;
+  width: 150px;
+  line-height: 20px;
+  cursor: pointer;
+  -webkit-box-shadow: 6px 6px 23px -13px rgba(0, 0, 0, 0.77);
+  box-shadow: 6px 6px 23px -13px rgba(0, 0, 0, 0.77);
+}
+.wrapper .btn:active {
+  box-shadow: inset 0px 0px 10px #1a1f58;
+  color: #1a1f58;
+}
+
+.wrapper .main_wrapper .head .contact, .wrapper .main_wrapper .aboutPage .text, .wrapper .products .products .productsWrap .aBoutProduct, .wrapper .orderProcess p, .wrapper .FAQ .FAQWrap .Q p {
+  font-family: "Nunito", sans-serif;
+  color: #1a1f58;
+  font-size: 20px;
+}
+
+.wrapper .products .products .productsWrap .productName, .wrapper .FAQ .FAQWrap .Q .big {
+  font-family: "Montserrat", sans-serif;
+  color: #1a1f58;
+  font-size: 20px;
+}
+
+.wrapper .products .sectionName, .wrapper .orderProcess .sectionName, .wrapper .FAQ .sectionName {
+  font-family: "Montserrat", sans-serif;
+  color: #1a1f58;
+  font-size: 50px;
+}
+
+.wrapper .footer .contacts {
+  font-family: "Nunito", sans-serif;
+  color: #c3c7e2;
+  font-size: 40px;
+}
+
+.wrapper .products .sectionName, .wrapper .orderProcess .sectionName, .wrapper .FAQ .sectionName {
+  text-align: center;
+  margin: 60px 0px 60px 0px;
+}
+
+.wrapper .products .products .productsWrap .product, .wrapper .products .products .productsWrap .product .slideinfo .size .colorsizegrid {
+  border: inherit;
+  border-radius: 10px;
+}
+
+.wrapper .products .products .productsWrap .product {
+  -webkit-box-shadow: 5px 5px 15px -6px #000000;
+  box-shadow: 5px 5px 15px -6px #000000;
+}
+
+.wrapper .orderProcess .steps .child .stepNum {
+  font-family: "Montserrat", sans-serif;
+  color: #f97241;
+  font-size: 50px;
+  text-shadow: 0.5px 0.5px #1a1f58, 1px 1px #1a1f58, 1.5px 1.5px #1a1f58, 2px 2px #1a1f58, 2.5px 2.5px #1a1f58, 3px 3px #1a1f58, 3.5px 3.5px #1a1f58, 4px 4px #1a1f58;
+}
+
+.wrapper .orderProcess .steps .child .stepName {
+  font-family: "Montserrat", sans-serif;
+  color: #1a1f58;
+  font-size: 100%;
+}
+
+.arrows {
+  width: 60px;
+  height: 72px;
+}
+
+.arrows path {
+  stroke: #1a1f58;
+  fill: transparent;
+  stroke-width: 1px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.arrows path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s;
+}
+
+.arrows path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s;
+}
+
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+}
+
+.slideshow_wrapper {
+  align-items: center;
+  max-width: 400px;
+  position: relative;
+}
+.slideshow_wrapper img {
+  width: 400px;
+}
+.slideshow_wrapper .slides {
+  display: none;
+}
+.slideshow_wrapper .prev, .slideshow_wrapper .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  color: #1a1f58;
+  font-size: 30px;
+  transition: 0.6s ease;
+}
+.slideshow_wrapper .prev {
+  left: -40;
+}
+.slideshow_wrapper .next {
+  right: -40;
+}
+.slideshow_wrapper .prev:hover, .slideshow_wrapper .next:hover {
+  color: #ffcc99;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #1a1f58;
+}
+
+.wrapper {
+  min-width: 1400px;
+  background-image: linear-gradient(to right top, #e0e7f1, #cbd9e8, #b6cbde, #9ebed4, #86b1ca);
+}
+.wrapper .main_wrapper {
+  background: url(../img/bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+.wrapper .main_wrapper .head {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  width: 100%;
+  background: #6e91d1;
+  background: linear-gradient(180deg, #6e91d1 0%, transparent);
+}
+.wrapper .main_wrapper .head .menu {
+  display: flex;
+  align-self: center;
+  margin-left: 20px;
+}
+.wrapper .main_wrapper .head .contact {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-left: 40px;
+}
+.wrapper .main_wrapper .head .contact .p1 {
+  font-size: 20px;
+}
+.wrapper .main_wrapper .head .contact .p2 {
+  font-size: 40px;
+}
+.wrapper .main_wrapper .aboutPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.wrapper .main_wrapper .aboutPage .logo {
+  align-self: center;
+  height: 200px;
+  margin-right: 20px;
+}
+.wrapper .main_wrapper .aboutPage .logo img {
+  height: 200px;
+}
+.wrapper .main_wrapper .aboutPage .text {
+  font-size: 40px;
+  text-align: center;
+}
+.wrapper .main_wrapper .aboutPage .text .rollshtori {
+  font-family: "Montserrat", sans-serif;
+  font-size: 100px;
+  text-shadow: 0.5px 0.5px #c3c7e2, 1px 1px #c3c7e2, 1.5px 1.5px #c3c7e2, 2px 2px #c3c7e2, 2.5px 2.5px #c3c7e2, 3px 3px #c3c7e2, 3.5px 3.5px #c3c7e2, 4px 4px #c3c7e2, 4.5px 4.5px #c3c7e2, 5px 5px #c3c7e2, 5.5px 5.5px #c3c7e2;
+}
+.wrapper .main_wrapper .aboutPage .text .delivery {
+  height: 53px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 37.5px;
+  color: white;
+  background: url(../img/arrow.png) 50% no-repeat;
+  background-size: contain;
+}
+.wrapper .main_wrapper .aboutPage .arrow {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.wrapper .products .products {
+  display: flex;
+  justify-content: center;
+}
+.wrapper .products .products .productsWrap {
+  display: grid;
+  grid-template-columns: repeat(2, 630px);
+  margin: 60px;
+  gap: 40px;
+}
+.wrapper .products .products .productsWrap .product {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+.wrapper .products .products .productsWrap .product img {
+  height: 300px;
+}
+.wrapper .products .products .productsWrap .product .slideinfo {
+  margin-left: 20px;
+}
+.wrapper .products .products .productsWrap .product .slideinfo .size {
+  margin-top: 20px;
+}
+.wrapper .products .products .productsWrap .product .slideinfo .size .colorsizegrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 320px;
+  padding: 10px;
+  margin-top: 10px;
+}
+.wrapper .products .products .productsWrap .product .slideinfo .size .colorsizegrid p {
+  font-family: "Nunito", sans-serif;
+  color: #1a1f58;
+  font-size: 15px;
+}
+.wrapper .orderProcess {
+  margin-top: 50px;
+  padding: 10px 0 100px 0;
+  background: url(../img/wave.svg) no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.wrapper .orderProcess .steps {
+  display: flex;
+  justify-content: space-evenly;
+}
+.wrapper .orderProcess .steps .child .stepAbout {
+  margin-top: 10px;
+}
+.wrapper .orderProcess p {
+  text-align: center;
+}
+.wrapper .FAQ {
+  margin: 100px auto 200px auto;
+}
+.wrapper .FAQ .FAQWrap {
+  display: flex;
+  justify-content: space-evenly;
+}
+.wrapper .FAQ .FAQWrap .Q {
+  width: 400px;
+}
+.wrapper .FAQ .FAQWrap .Q p {
+  margin-bottom: 10px;
+}
+.wrapper .FAQ .FAQWrap .Q iframe {
+  margin-top: 15px;
+}
+.wrapper .call {
+  display: flex;
+  position: sticky;
+  bottom: 0px;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1f58;
+}
+.wrapper .call input {
+  height: 50px;
+  width: 300px;
+  outline: inherit;
+  border: hidden;
+  border-radius: 50px;
+  color: #1a1f58;
+  font-size: 20px;
+  padding-left: 15px;
+}
+.wrapper .footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #081326;
+  height: 400px;
+}
+.wrapper .footer .contacts {
+  text-align: center;
+}
+.wrapper .footer .contacts p {
+  margin: 10px 0px 0px 0px;
+}
+.wrapper .footer .contacts img {
+  height: 50px;
+  margin: 20px 0px;
+}
