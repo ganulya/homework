@@ -23,23 +23,11 @@ module.exports = {
             },
             {
                 test: /\.(jpg|png|svg|gif)/,
-                use: ['file-loader']
+                loader: 'file-loader',
+                options: {
+                    name: 'images/[name].[ext]'
+                }
             },
-            {
-                test: /\.html$/,
-                use: [
-                    {
-                        loader: 'html-loader',
-                        options: {
-                            sources: true,
-                        },
-                    },
-                ],
-            },
-            {
-                test: /\.(png|jpg)$/,
-                type: 'asset',
-            }, 
         ]
     },
     devServer: {
